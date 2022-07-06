@@ -4,7 +4,6 @@ import imutils
 import os
 import time
 import matplotlib.pyplot as plt
-from socialDistanceDashboard import SocialDistanceAnalysis
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 
 if __name__ == "__main__":
@@ -15,9 +14,8 @@ if __name__ == "__main__":
         print("CHOOSE YOUR OPTION: ")
         print("\n")
         print("1. FACE-MASK DETECTION")
-        print("2. SOCIAL DISTANCING DETECTION")
-        print("3. CROWD DETECTION")    
-        print("4. EXIT")
+        print("2. CROWD DETECTION")    
+        print("3. EXIT")
         print("\n")
 
         choice=int(input("Enter your choice: "))
@@ -27,13 +25,9 @@ if __name__ == "__main__":
             os.system('python test.py')
         
         elif choice==2:
-            sd = SocialDistanceAnalysis()
-            sd.sd_detect()
-        
-        elif choice==3:
             os.system('python test2.py')
 
-        elif choice==4:
+        elif choice==3:
             break
 
         else:
