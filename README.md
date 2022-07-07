@@ -26,6 +26,7 @@ rosrun main.py
 - 1)Face Mask Detection
 - 2)Crowd Detection
 - 3)Exit
+
 Enter the number on the terminal accordingly to run the desired program.
 
 
